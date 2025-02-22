@@ -3,3 +3,4 @@
 *.elf
 *.rpx
 *.wuhb
+.DS_Store
