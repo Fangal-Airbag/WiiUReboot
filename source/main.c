@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		OSTick end = OSGetTick();
 		for (int i = 0; i < 4; i++) {
 			VPADRead(VPAD_CHAN_0, &vStatus, 1, &vErr);
-            KPADReadEx((KPADChan)i, &kStatus, 1, &kErr);
+            		KPADReadEx((KPADChan)i, &kStatus, 1, &kErr);
 
 			// To fully reboot the system the user needs to hold B
 			if ((buttonHeld() & BUTTON_B) | (vStatus.hold & VPAD_BUTTON_B)) 
